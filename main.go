@@ -2,13 +2,19 @@ package main
 
 import (
 	"fmt"
+	"math"
+	"os"
 	_ "strings"
 
-	"github.com/aj387/Go-Percpio/math"
+	m "github.com/aj387/Go-Percpio/math"
 )
 
 func main() {
 	vals := []float64{1, 10, 110, 1000}
-	fmt.Println(math.Add(10, 20))
-	fmt.Println(math.Avg(vals))
+	fmt.Println(m.Add(10, 20))
+	fmt.Println(m.Sub(10, 20))
+	fmt.Println(m.Pi)
+	fmt.Println(math.Pi)
+	fmt.Fprintln(os.Stdout, "Hello !!!")
+	fmt.Println(m.Avg(vals))
 }
